@@ -258,6 +258,7 @@ FirebaseServer.prototype = {
 		}
 
 		function handleAuth(requestId, credential) {
+/*
 			if (server._authSecret === credential) {
 				return send({t: 'd', d: {r: requestId, b: {s: 'ok', d: TokenValidator.normalize({ auth: null, admin: true, exp: null }) }}});
 			}
@@ -269,6 +270,7 @@ FirebaseServer.prototype = {
 			} catch (e) {
 				send({t: 'd', d: {r: requestId, b: {s: 'invalid_token', d: 'Could not parse auth token.'}}});
 			}
+*/
 		}
 
 		function accumulateFrames(data){
